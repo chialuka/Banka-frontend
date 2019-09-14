@@ -72,7 +72,7 @@ const Register = withRouter((props) => {
   const { firstname, lastname, email, password, confirmPassword } = userDetails;
 
   return (
-    <div className="registration-page">
+    <main className="registration-page">
       {user.loading && <p>We are currently loading at the Niger</p>}
       <Paper elevation={6} className="paper">
         <Typography variant="h5" component="h3" className="register-heading">
@@ -168,7 +168,7 @@ const Register = withRouter((props) => {
           </Link>
         </div>
       </Paper>
-    </div>
+    </main>
   );
 });
 
